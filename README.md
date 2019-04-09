@@ -6,7 +6,7 @@ Requirements:
 1 VPS Server
 2 WinSCP or PuTTY
 ```
-#Steps 1 
+Step #1 
 Commands:
 ```
 sudo su
@@ -14,20 +14,20 @@ apt-get update
 apt-get install apache2
 apt-get install squid3
 ```
-#Step 2
+Step #2
 Access root via PuTTY or WinSCP then go to etc > ssh > sshd_config
 Open and edit the file with nano and add
 ```
 Port 443
 ```
 
-#Step 3
+Step #3
 Open squid folder and delete file squid.conf
 ```
 rm -f /etc/squid/squid.conf
 ```
 
-#Step 4
+Step #4
 Create file squid.conf in squid folder
 ```
 nano /etc/squid/squid.conf
